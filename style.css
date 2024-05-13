@@ -57,7 +57,7 @@ header div.container-grid {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    ;
+    
 
 }
 
@@ -486,6 +486,14 @@ footer .container-grid {
     color: var(--laranja-gamifica);
 }
 
+.menu-fechado{
+    display: none;
+}
+
+#icone-barras{
+    display: none;
+}
+
 /* agora comecara parte de mobile-break point */
 @media screen and (max-width: 1300px) {
     header {
@@ -687,6 +695,10 @@ footer .container-grid {
     margin-right: 30px;
 }
 
+#portfolio {
+    margin-bottom: 0;
+}
+
 #contato{
     padding-top: 70px;
 
@@ -695,13 +707,31 @@ footer .container-grid {
 
 
 }
+#contato h2 {
+    margin-bottom: 0px;
+}
 
 #contato form {
     width: 100%;
     border-radius: 0;
 
  }
-
-
 }
 
+@media screen and (max-width:400px) {
+    header img {
+        width: 160px;
+    }
+
+    header svg {
+        width: 40px;
+    }
+    .conteudo-banner p {
+        font-size: 20px;
+    }
+
+    footer img {
+        width: 200px;
+    }
+
+}
